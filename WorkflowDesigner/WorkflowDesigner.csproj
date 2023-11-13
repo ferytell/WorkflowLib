@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\workflowdesigner.min.css" />
+    <None Include="wwwroot\js\workflowdesigner.min.js" />
+    <None Include="wwwroot\templates\activity.html" />
+    <None Include="wwwroot\templates\activitygroup.html" />
+    <None Include="wwwroot\templates\activityinline.html" />
+    <None Include="wwwroot\templates\activitytoolbar.html" />
+    <None Include="wwwroot\templates\actors.html" />
+    <None Include="wwwroot\templates\assignments.html" />
+    <None Include="wwwroot\templates\codeactions.html" />
+    <None Include="wwwroot\templates\codeform.html" />
+    <None Include="wwwroot\templates\commandParameters.html" />
+    <None Include="wwwroot\templates\commands.html" />
+    <None Include="wwwroot\templates\comment.html" />
+    <None Include="wwwroot\templates\commenttoolbar.html" />
+    <None Include="wwwroot\templates\confirmDialog.html" />
+    <None Include="wwwroot\templates\customforms\assignmentplugin\assignmentchangeform.html" />
+    <None Include="wwwroot\templates\customforms\assignmentplugin\assignmentcreateform.html" />
+    <None Include="wwwroot\templates\customforms\assignmentplugin\assignmentshavestatus.html" />
+    <None Include="wwwroot\templates\customforms\basicsplugin\createprocessform.html" />
+    <None Include="wwwroot\templates\customforms\basicsplugin\httprequestform.html" />
+    <None Include="wwwroot\templates\customforms\basicsplugin\sendemailform.html" />
+    <None Include="wwwroot\templates\customforms\loopsplugin\startloopforeachform.html" />
+    <None Include="wwwroot\templates\customforms\loopsplugin\startloopforform.html" />
+    <None Include="wwwroot\templates\decision.html" />
+    <None Include="wwwroot\templates\decisiontable.html" />
+    <None Include="wwwroot\templates\dropdownValues.html" />
+    <None Include="wwwroot\templates\elements.html" />
+    <None Include="wwwroot\templates\elements\activity.svg" />
+    <None Include="wwwroot\templates\elements\comment.svg" />
+    <None Include="wwwroot\templates\elements\decision.svg" />
+    <None Include="wwwroot\templates\elements\decisiontable.svg" />
+    <None Include="wwwroot\templates\elements\transition.svg" />
+    <None Include="wwwroot\templates\expressionform.html" />
+    <None Include="wwwroot\templates\jsonform.html" />
+    <None Include="wwwroot\templates\legend.html" />
+    <None Include="wwwroot\templates\library\AutoTransitions.xml" />
+    <None Include="wwwroot\templates\library\DirectAndReverseTransitionsWithApprovalAndDeny.xml" />
+    <None Include="wwwroot\templates\library\DirectoryCompress.xml" />
+    <None Include="wwwroot\templates\library\DirectTransitionsWithApproval.xml" />
+    <None Include="wwwroot\templates\library\ExpressionConditionOtherwise.xml" />
+    <None Include="wwwroot\templates\library\ExpressionOtherwise.xml" />
+    <None Include="wwwroot\templates\library\FileWriteRead.xml" />
+    <None Include="wwwroot\templates\library\HTTPRequest.xml" />
+    <None Include="wwwroot\templates\library\LoopForDateTime.xml" />
+    <None Include="wwwroot\templates\library\LoopForeach.xml" />
+    <None Include="wwwroot\templates\library\LoopForeachFromParameter.xml" />
+    <None Include="wwwroot\templates\library\LoopForInt.xml" />
+    <None Include="wwwroot\templates\library\ParallelApprovalWithoutBranches.xml" />
+    <None Include="wwwroot\templates\library\ParallelProcessesWithoutWaiting.xml" />
+    <None Include="wwwroot\templates\library\ParallelProcessesWithWaiting.xml" />
+    <None Include="wwwroot\templates\library\ParameterExpressionConditionOtherwise.xml" />
+    <None Include="wwwroot\templates\library\ParameterExpressionOtherwise.xml" />
+    <None Include="wwwroot\templates\library\ParametersAndExpressions.xml" />
+    <None Include="wwwroot\templates\library\Timer.xml" />
+    <None Include="wwwroot\templates\localization.html" />
+    <None Include="wwwroot\templates\logs.html" />
+    <None Include="wwwroot\templates\parameters.html" />
+    <None Include="wwwroot\templates\parametersform.html" />
+    <None Include="wwwroot\templates\processinfo.html" />
+    <None Include="wwwroot\templates\timers.html" />
+    <None Include="wwwroot\templates\toolbar.html" />
+    <None Include="wwwroot\templates\toolbarinfo.html" />
+    <None Include="wwwroot\templates\toolbarside.html" />
+    <None Include="wwwroot\templates\transition.html" />
+    <None Include="wwwroot\templates\transitiontoolbar.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WorkflowEngine.NETCore-Core" Version="6.0.0" />
+    <PackageReference Include="WorkflowEngine.NETCore-ProviderForMSSQL" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WorkflowLib\WorkflowLib.csproj" />
+  </ItemGroup>
+
+</Project>
